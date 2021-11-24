@@ -76,7 +76,7 @@ const upload = multer({ storage: storage }).single('file')
 
 // This section will help you get a list of all the records.
 recordRoutes.route("/record").get(function (req, res) {
-  console.log(dbo.getDb())
+  console.log(dbo)
   let db_connect = dbo.getDb();
   db_connect
     .collection("records")
