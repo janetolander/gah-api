@@ -1,5 +1,7 @@
 const { MongoClient } = require("mongodb");
-const Db = process.env.ATLAS_URI;
+// const Db = process.env.ATLAS_URI;
+const ATLAS_URI='mongodb+srv://lyappunov:OjqmRUnKf2mjMNRM@cluster0.zevc3.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
+const Db = ATLAS_URI;
 console.log('mongo uri is ', Db)
 const client = new MongoClient(Db, {
   useNewUrlParser: true,
